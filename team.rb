@@ -18,8 +18,8 @@ class Team
      win/(win+lose).to_f
   end
   
-  def show_team_result(team_name)
-    puts "#{team_name} の2020年の成績は #{self.win}勝　#{self.lose}敗　#{self.draw}分、勝率は#{self.calc_win_rate}です。"
+  def show_team_result
+    puts "#{self.name} の2020年の成績は #{self.win}勝　#{self.lose}敗　#{self.draw}分、勝率は#{self.calc_win_rate}です。"
   end
 end
 
@@ -32,9 +32,11 @@ team5 = Team.new("Carp",52,56,12)
 team6 = Team.new("Swallows",41,69,10)
 
 # インスタンスの使用
-team1.show_team_result("Giants")
-team2.show_team_result("Tigers")
-team3.show_team_result("Dragons")
-team4.show_team_result("BayStars")
-team5.show_team_result("Carp")
-team6.show_team_result("Swallows")
+
+team1.show_team_result
+team2.show_team_result
+team3.show_team_result
+team4.show_team_result
+team5.show_team_result
+team6.show_team_result
+
